@@ -1,0 +1,101 @@
+@use '/src/Components/style.scss' as lm;
+.sect1{
+    width: 99.2vw;
+    height: 100vh;
+    background-color: #F7F6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .very_big_container{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        .left_container{
+        width: 80vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:start;
+        align-items: flex-start;
+        gap: 3vh;
+        .text1{
+            h1{
+                font-size: 50px;
+                color: #222222;
+                span{
+                    color: #1DBF73;
+                }
+            }
+        }
+        .text2{
+            font-size: 27px;
+            color: #222222;
+        }
+        .Inputpole{
+           
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .slovo{
+                z-index: 1;
+                width: 532px;
+                height: 5vh;
+                border-radius: 3vh;
+                border: none;
+                background-color: #F2F0FE;
+            }
+            .slovo::placeholder{
+              color: #656084;
+              font-size: 16px;
+             text-indent: 2.5vh; 
+            }
+            button{
+                width: 154px;
+                height: 5vh;
+                border-radius: 3vh;
+                border: none;
+                background-color:#FBA457;
+                color: #F6FAFD;
+                position: relative;
+                right: 8vw;
+                z-index: 2;
+            }
+        }
+        .text3{
+               p{
+                font-size: 17px;
+                color: #222222;
+               }
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2vh;
+                .knopki{
+                   display: flex;
+                   gap: 2vh;
+                    button{
+                        width: 150px;
+                        height: 4vh;
+                        border-radius: 2vh;
+                        background-color: #F2F0FE;
+                        border:1px solid #e7e6ec ;
+                        color: #222222;
+                    }
+                    button:hover{
+                        color: #FBA457;
+                        border:1px solid #FBA457 ;
+                    }
+                }
+            }
+    }
+    .right_container{
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+}
